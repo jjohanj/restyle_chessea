@@ -18,7 +18,6 @@ export default () => (
           <div className="stars"><FaStar className="star"/><FaStar className="star"/><FaStar className="star"/></div>
           <FaChess className="fa-chess" /></div>
           <ul>
-            <FaStar className="star"/><li>Partijen</li><FaStar className="star"/>
           </ul>
         </div>
       </div>
