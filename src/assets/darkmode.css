@@ -1,0 +1,10 @@
+.dark-mode {
+  background: #1D1D1B;
+  color: #fff;
+}
+.dark-mode img,
+.dark-mode article a {
+  color: #ddd;
+  background-color: rgba(0,0,0,0.4);
+  filter: sepia(0.3);
+}

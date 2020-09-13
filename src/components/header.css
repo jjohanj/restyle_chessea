@@ -1,0 +1,141 @@
+header .grid {
+  display: grid;
+  grid-template-rows: 2.3rem 6rem 2.8rem;
+  border-bottom: 1px solid rgba(201,114,124,1);
+}
+
+header .meta {
+  background-color: #F9D5D3;
+}
+
+header .navigation {
+  position: relative;
+  background-color: #F8F3E8;
+  box-shadow: 0px 33px 10px -27px  rgba(201,114,124,1);
+  display: flex;
+  border-top: 2px solid rgba(201,114,124,1);
+    border-bottom: 2px solid rgba(201,114,124,1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.logo {
+  display: grid;
+  place-items: center;
+  height: 9.5rem;
+  width: 9.5rem;
+  border-radius: 50%;
+  background-color: #F8F3E8;
+  font-size: 2.75rem;
+  text-shadow: 1px 2px 0 #462521;
+  color: #e1276e;
+  color: #d11d62;
+  position: relative;
+  border: 2px solid rgba(201,114,124,1);
+  /* background: conic-gradient(#F9D5D3 0%, #F9D5D3 30%, #BBC7BA 30%, #BBC7BA 50%, #F9D5D3 50%, #F9D5D3 70%, #BBC7BA 70%, #BBC7BA 100%) 50% 50% / 100% 100% no-repeat */
+}
+
+.logo::before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  border: 1px solid rgba(201,114,124,1);
+}
+
+.logo > span {
+  position: absolute;
+  background: #F8F3E8;
+  z-index: 2;
+  letter-spacing: 1.5px;
+}
+.logo span a .neon {
+  animation: text-flicker 6s linear infinite;
+  color: #d11d62;
+    color: #e1276e;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  color: #462521;
+  font-size: 1.2rem;
+    text-shadow: 1px 2px 1px #ddd;
+}
+header ul li {
+  padding: 0 1rem;
+}
+
+.stars {
+  font-size: 1.5rem;
+  display: flex;
+      width: 100%;
+      padding: 0 0.75rem;
+      justify-content: space-evenly;
+}
+
+.logo .star:nth-of-type(2) {
+  top: -10px;
+  position: relative;
+}
+.fa-chess {
+  font-size: 1.75rem;
+  bottom: -8px;
+  position: relative;
+}
+header svg {
+  color:  rgba(201,114,124,1);
+}
+header .star {
+  font-size: 1rem;
+  float: left;
+}
+
+.bottom-bar {
+  background-color: #F9D5D3;
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity:1;
+    ;
+    text-shadow: 1px 2px 0 #462521;
+  }
+  23% {
+    opacity:1;
+    ;
+    text-shadow: 1px 2px 0 #462521;
+  }
+  25% {
+    opacity:0;
+
+        text-shadow: 1px 2px 3px #462521;
+  }
+  26% {
+    opacity:1;
+
+        text-shadow: 1px 2px 0 #462521;
+  }
+  97% {
+    opacity:1;
+
+        text-shadow: 1px 2px 0 #462521;
+  }
+
+  99% {
+    opacity:0.7;
+
+        text-shadow: 1px 2px 3px #462521;
+  }
+  100% {
+    opacity:1;
+
+        text-shadow: 1px 2px 3px #462521;
+  }
+}

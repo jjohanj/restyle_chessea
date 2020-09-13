@@ -1,24 +1,29 @@
 import React from "react"
-import { Heading, Box, Grid } from "@chakra-ui/core"
 import { Link } from "gatsby"
 import GatsbyLogo from "../assets/svg/gatsby.inline.svg"
+import './header.css'
+import {FaChess} from "react-icons/fa"
+import {FaStar} from "react-icons/fa"
 
 export default () => (
-  <Heading as="h1">
-    <Link to="/">
-      <Grid gridTemplateColumns="50px 1fr" gridGap="20px">
-        <Box maxW={50}>
-          <GatsbyLogo />
-        </Box>
-        <span
-          style={{
-            transform: `translateY(5px)`,
-            display: `inline-block`,
-          }}
-        >
-          Gatsby Source WordPress V4 demo
-        </span>
-      </Grid>
-    </Link>
-  </Heading>
+  <header className="">
+    <div className="grid">
+    <div className="meta"></div>
+      <div className="navigation">
+        <div className="container">
+          <ul>
+            <FaStar className="star"/><li><Link to="/artikelen">Verslagen</Link ></li><FaStar className="star"/>
+          </ul>
+          <div className="logo"><span><Link to="/">CHESS<span className="neon">EA</span></Link></span>
+          <div className="stars"><FaStar className="star"/><FaStar className="star"/><FaStar className="star"/></div>
+          <FaChess className="fa-chess" /></div>
+          <ul>
+            <FaStar className="star"/><li>Partijen</li><FaStar className="star"/>
+          </ul>
+        </div>
+      </div>
+    <div className="bottom-bar"></div>
+    </div>
+
+  </header>
 )

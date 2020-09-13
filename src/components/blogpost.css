@@ -1,0 +1,105 @@
+.blogpost {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-rows: min-content min-content;
+  background: #F8F3E8;
+  border: 1px solid #e1276e;
+  place-items: center;
+  padding: 3rem 0 5rem;
+  grid-gap: 3rem;
+  font-size: 1.1em;
+}
+.blogpost .content {
+  padding: 0 0.5rem;
+  display: grid;
+  grid-template-columns: minmax(min-content, 55rem)
+}
+
+.blogpost .gatsby-image-wrapper {
+  max-width: 500px;
+  width: 100%;
+  border: 2px solid #e1267e;
+  height: 100%;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-around;
+}
+.blogpost .gatsby-image-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;
+  border:5px solid #e1267e;
+  z-index: 99;
+}
+.blogpost ul {
+  border-top: 1px solid #e1276e;
+  margin-top: 4rem;
+  padding-top: 2rem;
+}
+.blogpost ul li {
+  display: inline;
+  margin:0 .5rem 0 0
+}
+/* .comments-wrapper {
+  display: grid;
+} */
+
+.comments-wrapper{
+	padding:30px;
+	margin:40px 0;
+	background: #F9D5D3;
+ border: 1px solid #e1267e;
+}
+.comments-wrapper .inner-wrap{
+	padding: 30px;
+	background: #F8F8F8;
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+
+.comments-wrapper label{
+	display: block;
+	color: #807F89;
+	margin-top: 15px;
+}
+.comments-wrapper input,
+.comments-wrapper textarea,
+.comments-wrapper select {
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 8px;
+	border: 2px solid #F9D5D3;
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+  background-color: #F8F3E8;
+}
+
+.comment-author {
+  color: #000;
+  font-family: "Chango";
+  margin-bottom: 0.5rem;
+  font-size: 0.9em;
+}
+.comment {
+  font-size: 1.1em;
+  padding: 0.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #F8F3E8;
+}
+/* #F9D5D3
+#ECA4A6
+#807F89
+#99A89E
+#BBC7BA
+#D7DBD1
+border:5px solid #e1267e;*/
