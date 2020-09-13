@@ -34,7 +34,10 @@ export default () => {
 
   `);
 
-
+  var clickLink = (i) => {
+    navigate(normalizePath(i));
+  }
+  
   var articles = data.allWpPost.edges.map((item, i) => {
     return (
       <article onClick = {() => clickLink(item.node.uri)} key={i}>
