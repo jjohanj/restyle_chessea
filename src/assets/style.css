@@ -87,7 +87,11 @@
   }
 }
 .home .cards article:first-of-type .gatsby-image-wrapper {
-  max-width: 250px;
+  grid-row: 1 /3;
+  z-index: 9
+}
+.home .cards article:first-of-type a {
+  font-size: 1.6em;
 }
   .home .cards article:first-of-type::before {
     content: "NIEUW!";

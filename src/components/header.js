@@ -13,11 +13,13 @@ export default () => (
         <div className="container">
           <ul>
             <FaStar className="star"/><li><Link to="/artikelen">Verslagen</Link ></li><FaStar className="star"/>
+
           </ul>
           <div className="logo"><span><Link to="/">CHESS<span className="neon">EA</span></Link></span>
           <div className="stars"><FaStar className="star"/><FaStar className="star"/><FaStar className="star"/></div>
           <FaChess className="fa-chess" /></div>
           <ul>
+                  <FaStar className="star"/><li><Link to="/partijen">Partijen</Link ></li><FaStar className="star"/>
           </ul>
         </div>
       </div>
