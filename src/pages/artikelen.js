@@ -26,7 +26,7 @@ function Artikelen({location}) {
           }
         }
       }
-      allWpPost {
+      allWpPost(sort: {fields: databaseId, order: DESC}) {
         edges {
           node {
             title
@@ -34,6 +34,11 @@ function Artikelen({location}) {
             uri
             date
             databaseId
+            categories {
+              nodes {
+                name
+              }
+            }
             tags {
               nodes {
                 name
@@ -54,7 +59,6 @@ function Artikelen({location}) {
   `);
 
   useEffect(() => {
-    console.log(tag);
     setFilterMenu(data.allWpTag.edges);
     setArticles(data.allWpPost.edges);
 
@@ -98,7 +102,8 @@ function Artikelen({location}) {
     });
   }
 
-  var blog = articles.map((item, i) => {
+  var blog = articles.filter(item => item.node.categories.nodes.some(obj => obj.name !== "game")
+).map((item, i) => {
     return (
       <article onClick = {() => clickLink(item.node.uri)} key={i}>
         <Link to={normalizePath(item.node.uri)}><h2>{item.node.title}</h2></Link>

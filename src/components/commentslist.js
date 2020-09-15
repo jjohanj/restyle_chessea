@@ -14,7 +14,7 @@ function Commentslist (props) {
     };
     fetchData();
   }, []);
-  console.log(data);
+
   var comments = data.reverse().map((item, i) => {
   return (
     <div className="comment" key={i} dangerouslySetInnerHTML={{__html: "<p class='comment-author'>" + item.author_name + ":</p>" + item.content.rendered }}/>

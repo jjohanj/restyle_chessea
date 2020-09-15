@@ -262,7 +262,7 @@ main .card-wrapper {
 }
 .tags li .btn {
   float:left;
-  /* padding: 0.25rem 0.35rem; */
+  padding: 0.65rem 0.85rem;
   margin: 0.25rem;
 }
 
