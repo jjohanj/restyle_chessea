@@ -96,6 +96,13 @@
   margin-bottom: 1.5rem;
   background-color: #F8F3E8;
 }
+
+@media (min-width: 768px) {
+.comments-wrapper{
+	margin:40px 120px;
+
+}
+}
 /* #F9D5D3
 #ECA4A6
 #807F89
